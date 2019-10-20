@@ -15,7 +15,7 @@
 
     <form action="script.php" method="post">
         <?php
-            $errMensage = isset($_SESSION['mensagem de erro'])? 
+            $errMensage = isset($_SESSION['mensagem de erro'])? $_SESSION['mensagem de erro'] : '';
         ?>
 
         <label for="name">Nome</label>
